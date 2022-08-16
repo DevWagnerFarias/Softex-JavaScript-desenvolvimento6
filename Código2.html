@@ -9,21 +9,19 @@
 <body>
     Digita a primeira nota<br />
     <input type="number" id="n1" /><br />
-    Digite a segunda nota<br />
+     Digite a segunda nota<br />
     <input type="number" id="n2" /><br />
-   
 
-    <button onClick="calcular()">Calcular</button>
+    <button onClick="notanecessaria()">Nota Necessária</button>
 
     <script>
-        function calcular() {
+        function notanecessaria() {
             var n1 = document.getElementById("n1").value
             var n2 = document.getElementById("n2").value
-            var n3 = document.getElementById("n3").value
 
-            var media = (Number(n1) + Number(n2) + Number(n3)) / 3
+            var notaNecessaria = 21 - Number(n1)  Number(n2)
             
-            console.log(`Estudante tem média ${media}`)
+            console.log(`A  nota necessária para ficar dentro da média é ${notaNecessaria}`)
         }
     </script>
 
